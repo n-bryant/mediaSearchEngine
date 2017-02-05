@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <main>
+
+      <section class="lightbox is-hidden">
+        <div class="close is-flex">x</div>
+        <div class='media-container is-centered is-flex'><!-- selected img/video --></div>
+        <!-- <a displays all src info><p>holding img/video source</p></a> -->
+      </section>
+
+      <section class="loading-container is-hidden">
+        <div class="load-icon"></div>
+      </section>
+
+      <section class="search-container is-flex">
+        <form class='search-form is-centered'>
+          <label for="search"><input class="search is-centered" type='text' name="search" placeholder="What's interesting today?" autofocus></label>
+          <label for="submit"><input class="submit" name="submit" type="submit" value="go"></label>
+        </form>
+        <div class='extra-actions-container is-centered'>
+          <button class='ten-latest'>Latest 10 Images/Videos</button>
+          <button class='lucky'>Feeling Lucky?</button>
+        </div>
+        <ul class="results is-flex">
+          <!-- thumbnails list items -->
+        </ul>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

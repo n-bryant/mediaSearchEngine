@@ -1,0 +1,44 @@
+body {
+  color: $lightGrey;
+  font: 16px/1.6 helvetica;
+}
+
+.close {
+  font-size: 3rem;
+}
+
+a {
+  color: $lightGrey;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+figcaption {
+  font-size: 1.5rem;
+}
+
+button {
+  color: $darkTeal;
+  font: 1.5rem helvetica;
+
+  &:active {
+    color: $lightGrey;
+  }
+}
+
+input {
+  color: $darkTeal;
+  font: 3rem helvetica;
+
+  &[type='submit'] {
+    color: $darkTeal;
+    text-transform: uppercase;
+
+    &:active {
+      color: $lightGrey;
+    }
+  }
+}

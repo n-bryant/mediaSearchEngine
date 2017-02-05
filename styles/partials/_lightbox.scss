@@ -1,0 +1,42 @@
+.lightbox {
+  align-items: center;
+  background: $lightbox;
+  display: flex;
+  left: 0;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .close {
+    color: #fff;
+    height: 5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      color: $darkTeal;
+    }
+  }
+
+  .media-container {
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 50%;
+
+    img {
+      width: 70%;
+    }
+
+    figcaption {
+      margin-top: 1rem;
+    }
+  }
+}

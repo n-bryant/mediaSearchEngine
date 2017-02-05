@@ -1,0 +1,32 @@
+.is-hidden {
+  display: none;
+}
+
+.is-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ripple {
+  50% {
+    transform: translateY(-10%);
+  }
+}

@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #a9a9a9;
+  font: 16px/1.6 helvetica; }
+
+.close {
+  font-size: 3rem; }
+
+a {
+  color: #a9a9a9;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+figcaption {
+  font-size: 1.5rem; }
+
+button {
+  color: #00222e;
+  font: 1.5rem helvetica; }
+  button:active {
+    color: #a9a9a9; }
+
+input {
+  color: #00222e;
+  font: 3rem helvetica; }
+  input[type='submit'] {
+    color: #00222e;
+    text-transform: uppercase; }
+    input[type='submit']:active {
+      color: #a9a9a9; }
+
+body {
+  background-color: #00222e;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"); }
+
+.search-container {
+  flex-direction: column;
+  height: 100vh;
+  margin: 1rem auto 3rem auto;
+  width: 85%; }
+  .search-container .search {
+    animation: fade-up 1s ease; }
+  .search-container .results {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem; }
+    .search-container .results .result {
+      max-width: 200px;
+      margin: .5rem; }
+      .search-container .results .result:hover {
+        animation: ripple 1s ease;
+        cursor: pointer;
+        filter: grayscale(100%); }
+
+.search-form input[type='text'] {
+  width: 100%; }
+.search-form input[type='submit'] {
+  border-radius: 1px;
+  margin-top: 1rem;
+  width: 100%; }
+  .search-form input[type='submit']:hover {
+    cursor: pointer; }
+  .search-form input[type='submit']:active {
+    background: #00222e;
+    border: 1px solid #a9a9a9; }
+
+.extra-actions-container {
+  margin-top: 1rem; }
+  .extra-actions-container button {
+    background: #a9a9a9;
+    border-radius: 5px;
+    width: 50%; }
+    .extra-actions-container button:first-of-type {
+      margin-bottom: .5rem; }
+    .extra-actions-container button:hover {
+      cursor: pointer; }
+    .extra-actions-container button:active {
+      background: #00222e;
+      border: 1px solid #a9a9a9; }
+
+.lightbox, .loading-container {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  left: 0;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  .lightbox .close, .loading-container .close {
+    color: #fff;
+    height: 5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 5rem; }
+    .lightbox .close:hover, .loading-container .close:hover {
+      cursor: pointer; }
+    .lightbox .close:active, .loading-container .close:active {
+      color: #00222e; }
+  .lightbox .media-container, .loading-container .media-container {
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 50%; }
+    .lightbox .media-container img, .loading-container .media-container img {
+      width: 70%; }
+    .lightbox .media-container figcaption, .loading-container .media-container figcaption {
+      margin-top: 1rem; }
+
+.loading-container .load-icon {
+  animation: loading 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+  border: 7px dashed #4b9cdb;
+  border-radius: 100%;
+  height: 2rem;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 2rem; }
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+.is-hidden {
+  display: none; }
+
+.is-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+.is-centered {
+  text-align: center; }
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(150%); }
+  25% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes ripple {
+  50% {
+    transform: translateY(-10%); } }
+
+/*# sourceMappingURL=main.css.map */
