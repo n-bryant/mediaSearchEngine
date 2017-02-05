@@ -119,7 +119,7 @@
     function getMediaData(parameter) {
       loading.show();
 
-      let fetchURL = `http://www.splashbase.co/api/v1/images/${parameter}`;
+      let fetchURL = `https://www.splashbase.co/api/v1/images/${parameter}`;
       if (parameter === 'search') {
         fetchURL += `?query=${encodeURIComponent(currentSearch)}`;
         console.log(fetchURL);
@@ -140,7 +140,7 @@
     }
 
     function getSource(sourceID) {
-      let fetchURL = `http://www.splashbase.co/api/v1/images/${sourceID}`;
+      let fetchURL = `https://www.splashbase.co/api/v1/images/${sourceID}`;
       return fetchURL;
     }
 
