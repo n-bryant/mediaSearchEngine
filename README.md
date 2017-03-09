@@ -1,2 +1,2 @@
-# tiy-fee-week4-day4-mediaSE
-https://n-bryant.github.io/tiy-fee-week4-day4-mediaSE/
+# media search engine
+* practice consuming web apis using splashbase to pull results based on a query string.  used flexbox for styling and coded a lightbox to view the media.
